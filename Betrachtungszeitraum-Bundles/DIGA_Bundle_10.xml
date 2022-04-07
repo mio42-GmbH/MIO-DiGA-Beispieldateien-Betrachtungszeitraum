@@ -1,0 +1,2334 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="4ab74443-768b-4042-8db3-01855cbd28f4"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2018-04-27T13:28:17.239+02:00"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Bundle|1.0.0"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <version value="2.9"/>
+                <code value="RI"/>
+                <display value="Resource identifier"/>
+            </coding>
+        </type>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:ec5bf24f-e823-45d6-97c6-14e35ded0ec0"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2018-04-27T12:30:02Z"/>
+    <entry>
+        <fullUrl value="urn:uuid:25662df4-e37c-46f8-a828-9a36eecbad44"/>
+        <resource>
+            <Composition>
+                <id value="25662df4-e37c-46f8-a828-9a36eecbad44"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-27T13:28:17.239+02:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Composition|1.0.0"/>
+                </meta>
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_DIGA_Betrachtungszeitraum">
+                    <valuePeriod>
+                        <start value="2018-04-15T07:15:00+00:00"/>
+                        <end value="2018-04-15T08:05:00+00:00"/>
+                    </valuePeriod>
+                </extension>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="53576-5"/>
+                        <display value="Personal health monitoring report Document"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <date value="2018-04-27"/>
+                <author>
+                    <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                </author>
+                <title value="Export"/>
+                <section>
+                    <title value="Vitalzeichen und Körpermaße"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <version value="2.71"/>
+                            <code value="8716-3"/>
+                            <display value="Vital signs"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="urn:uuid:dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:62bf6d6f-4823-43c8-860a-075ceeb395ae"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:8f3ff4f8-599d-4150-b862-8775f32538cf"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:1c336d9b-393e-46c4-a2fb-7696ee28e7d9"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:f28f0542-e88b-4819-a560-e10a71e79254"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:2024d129-dae9-459a-bf07-4763aa06a493"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:0564da54-b55e-40a8-8357-12d674b2be6a"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:39b64104-5a5e-4199-90c5-910de4678c1f"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:ad772113-af35-4a05-b542-f2892f522282"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:b246fd16-3fbd-45a2-a28d-b1649bd1db0e"/>
+                    </entry>
+                    <entry>
+                        <reference value="urn:uuid:4c34dee8-ac75-45f5-b922-d4f6b34e8294"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca57c90-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <DeviceDefinition xmlns="http://hl7.org/fhir">
+                <id value="dca57c90-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_DeviceDefinition_DIGA|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca57c90-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <manufacturerReference>
+                    <reference value="urn:uuid:dca59a90-3179-11ec-8d3d-0242ac130003"/>
+                </manufacturerReference>
+                <deviceName>
+                    <name value="Glukose Companion"/>
+                    <type value="model-name">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="Modellname"/>
+                            </extension>
+                        </extension>
+                    </type>
+                </deviceName>
+            </DeviceDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca5a990-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <DeviceDefinition xmlns="http://hl7.org/fhir">
+                <id value="dca5a990-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_DeviceDefinition_Free|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca5a990-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <deviceName>
+                    <name value="Librestil Freiheit"/>
+                    <type value="model-name">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="Modellname"/>
+                            </extension>
+                        </extension>
+                    </type>
+                </deviceName>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="337414009"/>
+                        <display value="Blood glucose meter (physical object)"/>
+                    </coding>
+                    <text value="Blood glucose meter"/>
+                </type>
+            </DeviceDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Device xmlns="http://hl7.org/fhir">
+                <id value="dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Device_DIGA|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <definition>
+                    <reference value="urn:uuid:dca57c90-3179-11ec-8d3d-0242ac130003"/>
+                </definition>
+                <deviceName>
+                    <name value="DiGA SugarControl"/>
+                    <type value="model-name">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="Modellname"/>
+                            </extension>
+                        </extension>
+                    </type>
+                </deviceName>
+            </Device>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Device xmlns="http://hl7.org/fhir">
+                <id value="dca58050-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Device_Free|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <definition>
+                    <reference value="urn:uuid:dca5a990-3179-11ec-8d3d-0242ac130003"/>
+                </definition>
+                <status value="active"/>
+                <statusReason>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/device-status-reason"/>
+                        <version value="4.0.1"/>
+                        <code value="online"/>
+                        <display value="Online">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Online"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </statusReason>
+                <manufactureDate value="2017-01-01"/>
+                <expirationDate value="2025-01-01"/>
+                <lotNumber value="35132156"/>
+                <serialNumber value="66516846546"/>
+                <deviceName>
+                    <name value="Implantat"/>
+                    <type value="model-name">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="Modellname"/>
+                            </extension>
+                        </extension>
+                    </type>
+                </deviceName>
+                <type>
+                    <text value="Test"/>
+                </type>
+                <version>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <value value="1.2"/>
+                </version>
+                <patient>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </patient>
+            </Device>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca59a90-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="dca59a90-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Organization_DIGA_Manufacturer|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca59a90-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <name value="DIGA"/>
+                <telecom>
+                    <system value="url">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="URL"/>
+                            </extension>
+                        </extension>
+                    </system>
+                    <value value="https://test.de"/>
+                </telecom>
+                <address>
+                    <type value="both"/>
+                    <line value="Musterweg ">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Musterweg"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="42"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="Hinterhof"/>
+                        </extension>
+                    </line>
+                    <city value="Berlin"/>
+                    <postalCode value="10787"/>
+                    <country value="DE"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Patient|1.0.0"/>
+                </meta>
+                <identifier>
+                    <use value="official"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca59e46-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Provenance xmlns="http://hl7.org/fhir">
+                <id value="dca59e46-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca59c0c-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca59a90-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca57c90-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca5a990-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <target>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <recorded value="2018-01-15T08:00:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-01-15T08:00:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dca59e46-3179-11ec-8d3d-0242ac130003"/>
+        <resource>
+            <Provenance xmlns="http://hl7.org/fhir">
+                <id value="dca59e46-3179-11ec-8d3d-0242ac130003"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-01-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:dca58e9c-3179-11ec-8d3d-0242ac130003"/>
+                </target>
+                <recorded value="2018-01-15T08:00:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:62bf6d6f-4823-43c8-860a-075ceeb395ae"/>
+        <resource>
+            <Observation>
+                <id value="62bf6d6f-4823-43c8-860a-075ceeb395ae"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:62bf6d6f-4823-43c8-860a-075ceeb395ae"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:20:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ac5c5e26-3027-4de7-9c12-caeaa77c947c"/>
+        <resource>
+            <Provenance>
+                <id value="ac5c5e26-3027-4de7-9c12-caeaa77c947c"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:ac5c5e26-3027-4de7-9c12-caeaa77c947c"/>
+                </target>
+                <recorded value="2018-04-15T07:20:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8f3ff4f8-599d-4150-b862-8775f32538cf"/>
+        <resource>
+            <Observation>
+                <id value="8f3ff4f8-599d-4150-b862-8775f32538cf"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:8f3ff4f8-599d-4150-b862-8775f32538cf"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:25:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d8f94424-d670-426e-a4b2-f6dc3157ddff"/>
+        <resource>
+            <Provenance>
+                <id value="d8f94424-d670-426e-a4b2-f6dc3157ddff"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:d8f94424-d670-426e-a4b2-f6dc3157ddff"/>
+                </target>
+                <recorded value="2018-04-15T07:25:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:1c336d9b-393e-46c4-a2fb-7696ee28e7d9"/>
+        <resource>
+            <Observation>
+                <id value="1c336d9b-393e-46c4-a2fb-7696ee28e7d9"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:1c336d9b-393e-46c4-a2fb-7696ee28e7d9"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:30:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:73e2ccb7-6956-45a1-b65c-eab81b5c6164"/>
+        <resource>
+            <Provenance>
+                <id value="73e2ccb7-6956-45a1-b65c-eab81b5c6164"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:73e2ccb7-6956-45a1-b65c-eab81b5c6164"/>
+                </target>
+                <recorded value="2018-04-15T07:30:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f28f0542-e88b-4819-a560-e10a71e79254"/>
+        <resource>
+            <Observation>
+                <id value="f28f0542-e88b-4819-a560-e10a71e79254"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:f28f0542-e88b-4819-a560-e10a71e79254"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:35:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:3308c4e0-9a64-4d9b-b6b6-e8c43c093728"/>
+        <resource>
+            <Provenance>
+                <id value="3308c4e0-9a64-4d9b-b6b6-e8c43c093728"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:3308c4e0-9a64-4d9b-b6b6-e8c43c093728"/>
+                </target>
+                <recorded value="2018-04-15T07:35:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:2024d129-dae9-459a-bf07-4763aa06a493"/>
+        <resource>
+            <Observation>
+                <id value="2024d129-dae9-459a-bf07-4763aa06a493"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:2024d129-dae9-459a-bf07-4763aa06a493"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:40:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f07b80be-d0b4-466a-90e5-2672e8f66a6c"/>
+        <resource>
+            <Provenance>
+                <id value="f07b80be-d0b4-466a-90e5-2672e8f66a6c"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:f07b80be-d0b4-466a-90e5-2672e8f66a6c"/>
+                </target>
+                <recorded value="2018-04-15T07:40:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:0564da54-b55e-40a8-8357-12d674b2be6a"/>
+        <resource>
+            <Observation>
+                <id value="0564da54-b55e-40a8-8357-12d674b2be6a"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:0564da54-b55e-40a8-8357-12d674b2be6a"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:45:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:6d8c1224-63bf-4c63-b663-a9243462f49a"/>
+        <resource>
+            <Provenance>
+                <id value="6d8c1224-63bf-4c63-b663-a9243462f49a"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:6d8c1224-63bf-4c63-b663-a9243462f49a"/>
+                </target>
+                <recorded value="2018-04-15T07:45:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:39b64104-5a5e-4199-90c5-910de4678c1f"/>
+        <resource>
+            <Observation>
+                <id value="39b64104-5a5e-4199-90c5-910de4678c1f"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:39b64104-5a5e-4199-90c5-910de4678c1f"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:50:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:351e5b60-978b-4969-a16e-e9ca5d6c2fd3"/>
+        <resource>
+            <Provenance>
+                <id value="351e5b60-978b-4969-a16e-e9ca5d6c2fd3"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:351e5b60-978b-4969-a16e-e9ca5d6c2fd3"/>
+                </target>
+                <recorded value="2018-04-15T07:50:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ad772113-af35-4a05-b542-f2892f522282"/>
+        <resource>
+            <Observation>
+                <id value="ad772113-af35-4a05-b542-f2892f522282"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:ad772113-af35-4a05-b542-f2892f522282"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T07:55:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:bd0ed951-e00a-410c-b624-140c989fbd26"/>
+        <resource>
+            <Provenance>
+                <id value="bd0ed951-e00a-410c-b624-140c989fbd26"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:bd0ed951-e00a-410c-b624-140c989fbd26"/>
+                </target>
+                <recorded value="2018-04-15T07:55:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:b246fd16-3fbd-45a2-a28d-b1649bd1db0e"/>
+        <resource>
+            <Observation>
+                <id value="b246fd16-3fbd-45a2-a28d-b1649bd1db0e"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:b246fd16-3fbd-45a2-a28d-b1649bd1db0e"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T08:00:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:0682c20e-ac0c-4109-afad-2c3a25776578"/>
+        <resource>
+            <Provenance>
+                <id value="0682c20e-ac0c-4109-afad-2c3a25776578"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:0682c20e-ac0c-4109-afad-2c3a25776578"/>
+                </target>
+                <recorded value="2018-04-15T08:00:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:4c34dee8-ac75-45f5-b922-d4f6b34e8294"/>
+        <resource>
+            <Observation>
+                <id value="4c34dee8-ac75-45f5-b922-d4f6b34e8294"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Observation_Glucose_Concentration|1.0.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <version value="2.9"/>
+                            <code value="RI"/>
+                            <display value="Resource identifier"/>
+                        </coding>
+                    </type>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:4c34dee8-ac75-45f5-b922-d4f6b34e8294"/>
+                </identifier>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="8716-3"/>
+                        <display value="Vital signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="434912009"/>
+                        <display value="Blood glucose concentration (observable entity)">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <version value="2.71"/>
+                        <code value="15074-8"/>
+                        <display value="Glucose [Moles/volume] in Blood">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="Blutzucker"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </subject>
+                <effectiveDateTime value="2018-04-15T08:05:00+00:00"/>
+                <performer>
+                    <reference value="urn:uuid:dca59b4e-3179-11ec-8d3d-0242ac130003"/>
+                </performer>
+                <valueQuantity>
+                    <value value="4.7"/>
+                    <comparator value="&gt;"/>
+                    <unit value="mmol/L"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mmol/L"/>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                        <code value="404684003:{363713009=260369004,363713009=255358001}"/>
+                        <display value="Clinical finding (finding): {Has interpretation (attribute)=Increasing (qualifier value), Has interpretation (attribute)=Rapid (qualifier value)}">
+                            <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url="content">
+                                    <valueString value="schnell steigend"/>
+                                </extension>
+                            </extension>
+                        </display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <text value="Test"/>
+                </note>
+                <device>
+                    <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                </device>
+                <referenceRange>
+                    <low>
+                        <value value="3.3"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </low>
+                    <high>
+                        <value value="5.5"/>
+                        <unit value="mmol/L"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mmol/L"/>
+                    </high>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                            <version value="4.0.1"/>
+                            <code value="normal"/>
+                            <display value="Normal Range"/>
+                        </coding>
+                    </type>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:039241c4-f098-4792-970e-3779f2e1d31e"/>
+        <resource>
+            <Provenance>
+                <id value="039241c4-f098-4792-970e-3779f2e1d31e"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2018-04-15T08:00:00+00:00"/>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_DIGA_Provenance|1.0.0"/>
+                </meta>
+                <target>
+                    <reference value="urn:uuid:039241c4-f098-4792-970e-3779f2e1d31e"/>
+                </target>
+                <recorded value="2018-04-15T08:05:00+00:00"/>
+                <activity>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+                        <version value="2020-08-12"/>
+                        <code value="CREATE"/>
+                        <display value="create"/>
+                    </coding>
+                </activity>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="PRIMAUTH"/>
+                            <display value="Primary Author"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca57f7e-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+                <agent>
+                    <role>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
+                            <version value="4.0.1"/>
+                            <code value="SOURCE"/>
+                            <display value="Source"/>
+                        </coding>
+                    </role>
+                    <who>
+                        <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                    </who>
+                </agent>
+            </Provenance>
+        </resource>
+    </entry>
+</Bundle>
